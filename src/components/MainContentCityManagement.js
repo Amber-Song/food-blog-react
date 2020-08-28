@@ -20,23 +20,23 @@ function MainContentCityManagement() {
 
   switch (param.cityName) {
     case "Auckland":
-      return <MainContent Data={AucklandData} />;
+      return <MainContent Data={AucklandData} City="Auckland" />;
     case "Dargaville":
-      return <MainContent Data={DargavilleData} />;
+      return <MainContent Data={DargavilleData} City="Dargaville" />;
     case "Dunedin":
-      return <MainContent Data={DunedinData} />;
+      return <MainContent Data={DunedinData} City="Dunedin" />;
     case "Hamilton":
-      return <MainContent Data={HamiltonData} />;
+      return <MainContent Data={HamiltonData} City="Hamilton" />;
     case "Invercargill":
-      return <MainContent Data={InvercargillData} />;
+      return <MainContent Data={InvercargillData} City="Invercargill" />;
     case "Kerikeri":
-      return <MainContent Data={KerikeriData} />;
+      return <MainContent Data={KerikeriData} City="Kerikeri" />;
     case "Paihia":
-      return <MainContent Data={PaihiaData} />;
+      return <MainContent Data={PaihiaData} City="Paihia" />;
     case "Wanaka":
-      return <MainContent Data={WanakaData} />;
+      return <MainContent Data={WanakaData} City="Wanaka" />;
     case "Whangarei":
-      return <MainContent Data={WhangareiData} />;
+      return <MainContent Data={WhangareiData} City="Whangarei" />;
     default:
       return <MainContentIndex />;
   }

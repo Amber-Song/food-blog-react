@@ -99,6 +99,23 @@ td:first-child {
 }
 
 /* other */
+button {
+  margin: 20px;
+  font-size: 16px;
+  background-color: lightyellow;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #fdfdb7;
+}
 .bold {
   font-weight: bold;
+}
+.link-link,
+.link-link:active {
+  color: black;
+  text-decoration: none;
+}
+.link-link:hover {
+  text-decoration: underline;
 }

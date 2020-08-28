@@ -12,7 +12,7 @@ function MainContentIndexPage() {
         <a
           href="http://potatocastles.com/"
           title="Go to potatocastles.com"
-          className="title-link"
+          className="link-link"
         >
           {" "}
           Potato Castles.
