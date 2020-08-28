@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body,
+#root {
+  min-height: 100%;
+  background-color: floralwhite;
+}
+#root {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page {
+  width: 90%;
+  min-width: 334px;
+  min-height: 100%;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Header */
+h1 {
+  margin: 1% 7% 0%;
+  font-size: 3em;
+  font-weight: bold;
+}
+.title-link,
+.title-link:hover,
+.title-link:active {
+  color: black;
+  text-decoration: none;
+}
+.title-text {
+  margin: 0% 8%;
+  font-size: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navigation bar */
+.bar-title {
+  position: absolute;
+  right: -25px;
+  top: 40px;
+  transform: rotate(-90deg);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: floralwhite;
+  background-color: black;
+  cursor: context-menu;
+}
+.bar-content {
+  position: absolute;
+  right: -15px;
+  top: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: floralwhite;
+  background-color: black;
+  z-index: 10;
+}
+a,
+a:active {
+  color: floralwhite;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Restaurant / Dish  */
+.dish-container {
+  width: min-content;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+.dish-info {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  opacity: 0;
+}
+.dish-container:hover img {
+  opacity: 0.2;
+}
+.dish-container:hover .dish-info {
+  opacity: 1;
+}
+
+tr {
+  vertical-align: top;
+}
+td:first-child {
+  color: gray;
+}
+
+/* other */
+.bold {
+  font-weight: bold;
 }
